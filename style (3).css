@@ -1,0 +1,64 @@
+
+/* Estilos globais e de reset */
+:root {
+    --wp--preset--aspect-ratio--square: 1;
+    --wp--preset--aspect-ratio--4-3: 4/3;
+    /* Outras variáveis CSS podem ser adicionadas aqui */
+}
+
+/* Estilos para emojis */
+img.wp-smiley,
+img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 0.07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}
+
+/* Estilos específicos do tema */
+#site-header.has-header-media .overlay-header-media {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#site-header #site-logo #site-logo-inner a img,
+#site-header.center-header #site-navigation-wrap .middle-site-logo a img {
+    max-height: 25px;
+}
+
+#footer-bottom {
+    background-color: #ffffff;
+}
+
+#footer-bottom a:hover,
+#footer-bottom #footer-bottom-menu a:hover {
+    color: #0b5d9f;
+}
+
+/* Tipografia */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 480px) {
+    #rank-math-rich-snippet-wrapper .rank-math-review-image {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    #rank-math-rich-snippet-wrapper .rank-math-review-data {
+        clear: both;
+    }
+}
