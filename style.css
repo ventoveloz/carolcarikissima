@@ -1,12 +1,14 @@
+
 /* Estilos globais e de reset */
 :root {
     --wp--preset--aspect-ratio--square: 1;
     --wp--preset--aspect-ratio--4-3: 4/3;
-    /* Outras variáveis CSS */
+    /* Outras variáveis CSS podem ser adicionadas aqui */
 }
 
-/* Estilos de elementos */
-img.wp-smiley, img.emoji {
+/* Estilos para emojis */
+img.wp-smiley,
+img.emoji {
     display: inline !important;
     border: none !important;
     box-shadow: none !important;
@@ -20,7 +22,7 @@ img.wp-smiley, img.emoji {
 
 /* Estilos específicos do tema */
 #site-header.has-header-media .overlay-header-media {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #site-header #site-logo #site-logo-inner a img,
@@ -39,11 +41,11 @@ img.wp-smiley, img.emoji {
 
 /* Tipografia */
 body {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3, h4 {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Estilos responsivos */
@@ -55,6 +57,7 @@ h1, h2, h3, h4 {
         text-align: center;
         margin-right: 0;
     }
+
     #rank-math-rich-snippet-wrapper .rank-math-review-data {
         clear: both;
     }
