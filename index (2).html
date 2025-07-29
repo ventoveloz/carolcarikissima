@@ -1,36 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Carol Carikíssima - Modelo Exclusiva</title>
+  <title>Miss Bella - Modelo Exclusiva</title>
 
   <!-- SEO -->
-  <meta name="description" content="Site oficial da modelo Carol Carikíssima. Veja ensaios exclusivos, portfólio e novidades." />
-  <meta name="keywords" content="Carol Carikíssima, modelo, ensaio, beleza, portfólio" />
-  <meta name="author" content="Carol Carikíssima" />
+  <meta name="description" content="Site oficial da modelo Miss Bella. Veja ensaios exclusivos, portfólio e novidades.">
+  <meta name="keywords" content="Miss Bella, modelo, ensaio, beleza, portfólio">
+  <meta name="author" content="Miss Bella">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Carol Carikíssima - Modelo Exclusiva" />
-  <meta property="og:description" content="Acompanhe o trabalho da modelo Carol Carikíssima e veja conteúdos exclusivos." />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="pt_BR" />
-  <meta property="og:url" content="https://ventoveloz.github.io/carolcarikissima/" />
-  <meta property="og:image" content="https://ventoveloz.github.io/carolcarikissima/IMG-20230902-WA0003.jpg" />
-
-  <!-- Estilos e Scripts -->
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <meta property="og:title" content="Miss Bella - Modelo Exclusiva">
+  <meta property="og:description" content="Acompanhe o trabalho da modelo Miss Bella e veja conteúdos exclusivos.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://ventoveloz.github.io/carolcarikissima/">
+  <meta property="og:image" content="https://raw.githubusercontent.com/ventoveloz/carolcarikissima/img/IMG-20230902-WA0003.jpg">
 
   <style>
+    body {
+      font-family: Montserrat, sans-serif;
+      background: #fafafa;
+      margin: 0;
+      padding: 0;
+      color: #222;
+      text-align: center;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      padding: 2em;
+    }
+    .hero {
+      padding: 2em;
+    }
+    .caixa-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+      padding: 1em;
+    }
+    .box {
+      flex: 1 1 250px;
+      max-width: 300px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 1.5em;
+      box-sizing: border-box;
+    }
+    .box img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1em;
+    }
+    footer {
+      background: #eee;
+      padding: 1em;
+      font-size: 0.9em;
+    }
     .age-overlay {
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.95);
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.95);
       color: white;
       display: flex;
       justify-content: center;
@@ -39,74 +74,73 @@
       flex-direction: column;
       text-align: center;
     }
-
     .age-overlay h2 {
       font-size: 1.5rem;
       margin-bottom: 1em;
     }
-
     .age-overlay button {
       font-size: 1.2rem;
       padding: 10px 30px;
       margin: 0.5em;
       cursor: pointer;
     }
+    @media screen and (max-width: 768px) {
+      .caixa-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <!-- Verificação de idade -->
+  <!-- Age Gate -->
   <div class="age-overlay" id="ageOverlay">
     <h2>Você tem mais de 18 anos?</h2>
     <button onclick="liberarSite()">Sim</button>
     <button onclick="window.location.href='https://www.google.com'">Não</button>
   </div>
 
-  <!-- Cabeçalho -->
   <header>
-    <h1>Carol Carikíssima</h1>
+    <h1>Miss Bella</h1>
     <p>Beleza, atitude e exclusividade</p>
   </header>
 
-  <!-- Conteúdo principal -->
   <main>
     <section class="hero">
       <h2>Bem-vindo ao site oficial</h2>
-      <p>Veja ensaios, novidades e acompanhe os bastidores do trabalho de Carol Carikíssima.</p>
+      <p>Veja ensaios, novidades e acompanhe os bastidores do trabalho de Miss Bella.</p>
     </section>
 
     <div class="caixa-container">
       <section class="box">
-        <img src="IMG-20230902-WA0003.jpg" alt="Ensaio Carol" />
+        <img src="https://raw.githubusercontent.com/ventoveloz/carolcarikissima/img/IMG-20230902-WA0003.jpg" alt="Ensaio Miss Bella" />
         <h3>Ensaio Exclusivo</h3>
-        <p>Fotos inéditas em diferentes cenários com Carol Carikíssima.</p>
+        <p>Fotos inéditas em diferentes cenários com Miss Bella.</p>
       </section>
 
       <section class="box">
-        <img src="IMG-20241118-WA0041.jpg" alt="Portfólio Carol" />
+        <img src="https://raw.githubusercontent.com/ventoveloz/carolcarikissima/img/IMG-20241118-WA0041.jpg" alt="Portfólio Miss Bella" />
         <h3>Portfólio Profissional</h3>
         <p>Trabalhos realizados, marcas e destaques da carreira da modelo.</p>
       </section>
 
       <section class="box">
-        <img src="20241118_232706.jpg" alt="Redes Sociais Carol" />
+        <img src="https://raw.githubusercontent.com/ventoveloz/carolcarikissima/img/20241118_232706.jpg" alt="Redes Sociais Miss Bella" />
         <h3>Contato e Redes</h3>
         <p>Siga nas redes sociais ou entre em contato para parcerias e eventos.</p>
       </section>
     </div>
   </main>
 
-  <!-- Rodapé -->
   <footer>
-    <a href="termos.html">Termos de Uso</a> • &copy; 2025 Carol Carikíssima
+    <a href="termos.html">Termos de Uso</a> • &copy; 2025 Miss Bella
   </footer>
 
-  <!-- Script local para liberar o site -->
   <script>
     function liberarSite() {
       document.getElementById("ageOverlay").style.display = "none";
     }
   </script>
 </body>
-
 </html>
