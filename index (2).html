@@ -1,70 +1,112 @@
 <!DOCTYPE html>
-<html class="html" lang="pt-BR" prefix="og: https://ogp.me/ns#">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicole Carioca - Viva a experiência mais carioca de SP</title>
-    <meta name="description" content="Viva a experiência mais carioca de São Paulo com Nicole Carioca. Encanto, beleza e atitude reunidos em um só lugar.">
-    <meta property="og:title" content="Nicole Carioca - Viva a experiência mais carioca de SP">
-    <meta property="og:description" content="Explore o charme de Nicole Carioca com conteúdos exclusivos.">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="pt_BR">
-    <meta property="og:url" content="https://seusite.com">
-    <meta property="og:image" content="https://seusite.com/imagem.jpg">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carol Carikíssima - Modelo Exclusiva</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Site oficial da modelo Carol Carikíssima. Veja ensaios exclusivos, portfólio e novidades." />
+  <meta name="keywords" content="Carol Carikíssima, modelo, ensaio, beleza, portfólio" />
+  <meta name="author" content="Carol Carikíssima" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Carol Carikíssima - Modelo Exclusiva" />
+  <meta property="og:description" content="Acompanhe o trabalho da modelo Carol Carikíssima e veja conteúdos exclusivos." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://ventoveloz.github.io/carolcarikissima/" />
+  <meta property="og:image" content="https://ventoveloz.github.io/carolcarikissima/IMG-20230902-WA0003.jpg" />
+
+  <!-- Estilos e Scripts -->
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+
+  <style>
+    .age-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.95);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .age-overlay h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1em;
+    }
+
+    .age-overlay button {
+      font-size: 1.2rem;
+      padding: 10px 30px;
+      margin: 0.5em;
+      cursor: pointer;
+    }
+  </style>
 </head>
-<body class="home wp-singular page-template-default page page-id-2 wp-custom-logo wp-embed-responsive wp-theme-oceanwp ehf-header ehf-template-oceanwp ehf-stylesheet-oceanwp oceanwp-theme dropdown-mobile default-breakpoint content-full-screen has-topbar page-header-disabled has-breadcrumbs elementor-default elementor-kit-5 elementor-page elementor-page-2" itemscope="itemscope" itemtype="https://schema.org/WebPage">
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKPWF6V" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<body>
+  <!-- Verificação de idade -->
+  <div class="age-overlay" id="ageOverlay">
+    <h2>Você tem mais de 18 anos?</h2>
+    <button onclick="liberarSite()">Sim</button>
+    <button onclick="window.location.href='https://www.google.com'">Não</button>
+  </div>
 
-    <div id="outer-wrap" class="site clr">
-        <a class="skip-link screen-reader-text" href="#main">Pular para conteúdo</a>
-        <div id="wrap" class="clr">
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Carol Carikíssima</h1>
+    <p>Beleza, atitude e exclusividade</p>
+  </header>
 
-            <!-- Cabeçalho -->
-            <header id="masthead" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
-                <div class="header-inner">
-                    <h1>Nicole Carioca</h1>
-                    <p>Viva a experiência mais carioca de SP</p>
-                </div>
-            </header>
+  <!-- Conteúdo principal -->
+  <main>
+    <section class="hero">
+      <h2>Bem-vindo ao site oficial</h2>
+      <p>Veja ensaios, novidades e acompanhe os bastidores do trabalho de Carol Carikíssima.</p>
+    </section>
 
-            <!-- Conteúdo principal -->
-            <main id="main" class="site-main clr" role="main">
-                <div id="content-wrap" class="container clr">
-                    <div id="primary" class="content-area clr">
-                        <div id="content" class="site-content clr">
-                            <article class="single-page-article clr">
-                                <div class="entry clr" itemprop="text">
-                                    <h2>Sobre Nicole</h2>
-                                    <p>Nicole é a expressão do charme e da alegria carioca em São Paulo. Conheça seu trabalho, acompanhe novidades e mergulhe nessa energia única.</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </main>
+    <div class="caixa-container">
+      <section class="box">
+        <img src="IMG-20230902-WA0003.jpg" alt="Ensaio Carol" />
+        <h3>Ensaio Exclusivo</h3>
+        <p>Fotos inéditas em diferentes cenários com Carol Carikíssima.</p>
+      </section>
 
-            <!-- Rodapé -->
-            <footer id="footer" class="site-footer" itemscope="itemscope" itemtype="https://schema.org/WPFooter" role="contentinfo">
-                <div class="footer-inner">
-                    <p>&copy; 2025 Nicole Carioca. Todos os direitos reservados.</p>
-                </div>
-            </footer>
-        </div>
+      <section class="box">
+        <img src="IMG-20241118-WA0041.jpg" alt="Portfólio Carol" />
+        <h3>Portfólio Profissional</h3>
+        <p>Trabalhos realizados, marcas e destaques da carreira da modelo.</p>
+      </section>
+
+      <section class="box">
+        <img src="20241118_232706.jpg" alt="Redes Sociais Carol" />
+        <h3>Contato e Redes</h3>
+        <p>Siga nas redes sociais ou entre em contato para parcerias e eventos.</p>
+      </section>
     </div>
+  </main>
 
-    <!-- Template do Age Gate -->
-    <template id="tmpl-age-gate">
-        <div class="age-gate-overlay">
-            <div class="age-gate-box">
-                <p>Você tem mais de 18 anos?</p>
-                <button onclick="document.querySelector('.age-gate-overlay').style.display='none'">Sim</button>
-                <button onclick="window.location.href='https://google.com'">Não</button>
-            </div>
-        </div>
-    </template>
+  <!-- Rodapé -->
+  <footer>
+    <a href="termos.html">Termos de Uso</a> • &copy; 2025 Carol Carikíssima
+  </footer>
 
+  <!-- Script local para liberar o site -->
+  <script>
+    function liberarSite() {
+      document.getElementById("ageOverlay").style.display = "none";
+    }
+  </script>
 </body>
+
 </html>
